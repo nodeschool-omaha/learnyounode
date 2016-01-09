@@ -1,8 +1,6 @@
-var sum = 0;
-process.argv.forEach(function(arg, index) {
-  if (index < 2)
-    return;
-
-  sum += Number(arg);
-});
-console.log(sum);
+var result = 0  
+       
+for (var i = 2; i < process.argv.length; i++)  
+  result += Number(process.argv[i])  
+       
+console.log(result)
